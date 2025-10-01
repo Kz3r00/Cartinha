@@ -1,2 +1,0 @@
-# Cartinha
-uma carta fofa
