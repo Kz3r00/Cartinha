@@ -34,7 +34,7 @@ const mensagens = [
     "A forma como você se importa com os pequenos detalhes é a coisa mais fofa.",
     "Você é como um raio de sol em um dia nublado: aquece e ilumina tudo.",
     "Sua alma é incrivelmente gentil, e isso transparece em cada palavra.",
-    "Você consegue ser fofo até quando está sério, só pela sua maneira de ser.",
+    "Você consegue ser fofa até quando está séria, só pela sua maneira de ser.",
     "O mundo seria mais duro sem a sua suavidade para contrabalançar.",
     "Sua presença, mesmo virtual, é como um abraço aconchegante.",
     "Você tem o dom de tornar os momentos simples em algo mágico.",
@@ -106,4 +106,5 @@ function abrirEnvelope() {
 // window.addEventListener('load', function() {
 //     // Isso faria com que sempre começasse com uma mensagem diferente
 //     // Descomente se quiser esse comportamento
+
 // });
