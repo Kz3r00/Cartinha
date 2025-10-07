@@ -3018,6 +3018,4 @@ function abrirEnvelope() {
 // window.addEventListener('load', function() {
 //     // Isso faria com que sempre começasse com uma mensagem diferente
 //     // Descomente se quiser esse comportamento
-
 // });
-
