@@ -1,12 +1,17 @@
 /* Estilos da página da carta */
 body.carta-page {
-    background: linear-gradient(135deg, #f9c5d1, #c2a0cd);
     margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Arial', sans-serif;
+    /* Fundo com imagem (gradiente vermelho-azul) */
+    background-image: url('fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* mantém o fundo fixo no mobile */
 }
 
 .envelope-container {
@@ -74,17 +79,6 @@ body.carta-page {
     overflow: hidden;
 }
 
-.coração {
-    font-size: 40px;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    transition: transform 0.3s ease;
-}
-
 /* Quando o envelope está aberto */
 .envelope-container.aberto .tampa {
     transform: rotateX(180deg);
@@ -93,11 +87,6 @@ body.carta-page {
 .envelope-container.aberto .carta {
     opacity: 1;
     transform: translateY(-15px) scale(1);
-}
-
-.envelope-container.aberto .coração {
-    transform: translate(-50%, -50%) scale(0.8);
-    opacity: 0.7;
 }
 
 /* Animação para trocar mensagens */
@@ -111,11 +100,7 @@ body.carta-page {
     animation: none;
 }
 
-/* Efeito hover */
-.envelope-container:hover .coração {
-    transform: translate(-50%, -50%) scale(1.1);
-}
-
+/* Efeito hover no envelope */
 .envelope-container:hover .corpo-envelope {
     background: #ff5a7d;
 }
@@ -127,9 +112,10 @@ body.carta-page {
     top: -60px;
     left: 50%;
     transform: translateX(-50%);
-    color: #666;
+    color: #fff;
     font-size: 12px;
     text-align: center;
     width: 200px;
-    opacity: 0.8;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
